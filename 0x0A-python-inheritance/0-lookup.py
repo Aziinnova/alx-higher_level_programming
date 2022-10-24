@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module contains: lookup """
+""" module contains: l """
 
 
 def lookup(obj):
