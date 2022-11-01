@@ -1,16 +1,20 @@
 #!/usr/bin/python3
-"""Area and Perimeter"""
+"""Area and Perimeter
+
+"""
 
 
 class Rectangle:
     """Defines the implementation of a rectangle
 
-    Attribute:
+    Attributes:
         number_of_instances (int): The number of Rectangle instances.
+        print_symbol (any): The symbol used for string representation.
 
     """
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         type(self).number_of_instances += 1
@@ -72,7 +76,8 @@ class Rectangle:
 
         rectangle = []
         for i in range(self.__height):
-            [rectangle.append('#') for j in range(self.__width)]
+            [rectangle.append(str(self.print_symbol))
+             for j in range(self.__width)]
             if i != self.__height - 1:
                 rectangle.append("\n")
         return ("".join(rectangle))
@@ -90,3 +95,20 @@ class Rectangle:
         """
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        """Return the Rectangle with the greater area.
+
+        Args:
+            rect_1 (Rectangle): first rectangle
+            rect_2 (Rectangle): second rectangle
+
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if rect_1.area() >= rect_2.area():
+            return (rect_1)
+        return (rect_2)
