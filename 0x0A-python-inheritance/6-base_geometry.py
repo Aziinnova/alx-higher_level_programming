@@ -1,15 +1,4 @@
 #!/usr/bin/python3
-"""Geometry module.
-Author: Kanneh
-
-"""
-
-
-class BaseGeometry:
-    """An empty class"""
-    pass
-azii@192 0x0A-python-inheritance % cat 6-base_geometry.py 
-#!/usr/bin/python3
 """ Improve Geometry.
 Author: Kanneh
 
