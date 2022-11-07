@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-""" module contains: l """
+"""Author: Kanneh"""
 
 
 def lookup(obj):
-        """
-                returns the list of available attributes
-                        and methods of obj
-                                Args:
-                                                obj: object whose attributes and methods
-                                                                 are to be listed
-                                                                         Return:
-                                                                                     list of attributes and methods of obj
-                                                                                         """
-                                                                                             return dir(obj)
+    """A function that returns the list of available
+    attributes and methods of an object
+    Returns a list object
+
+    """
+    return dir(obj)
