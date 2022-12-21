@@ -37,4 +37,3 @@ class Rectangle(BaseGeometry):
         self.integer_validator(width, height)
         self.__width = width
         self.__height = height
-azii@192 0x0A-python-inheritance
