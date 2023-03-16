@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-number = 98
+umber = 98
 
-print(number, "Battery street", end='\n')
+print(umber, "Battery street", end='\n')
 
