@@ -2,4 +2,5 @@
 
 number = 98
 
-print(number, "Battery street")
+print(number, "Battery street", end='\n')
+
